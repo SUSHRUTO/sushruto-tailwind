@@ -1,5 +1,5 @@
 {
-  "name": "sushruto-tailwind",
+  "name": "sushruto-tailwind-css",
   "version": "1.0.0",
   "description": "A lightweight Tailwind-like CSS engine",
   "main": "src/index.js",

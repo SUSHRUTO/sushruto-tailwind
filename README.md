@@ -24,3 +24,13 @@ DOM → Extract Classes → Generate CSS → Apply Styles
 <div class="chai-p-20 chai-bg-red chai-text-center">
   Hello World
 </div>
+
+## 📦 Installation
+
+npm install sushruto-tailwind-css
+
+## Usage
+
+import { sushrutoTailwind } from "sushruto-tailwind-css";
+
+sushrutoTailwind();
