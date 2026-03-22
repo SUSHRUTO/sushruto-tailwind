@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sushruto Tailwind Docs</title>
+
+  <script type="module" src="./src/index.js"></script>
+  <body>
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+
+    /* SIDEBAR */
+    .sidebar {
+      width: 260px;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+
+      padding: 40px 30px;
+      border-right: 1px solid #1f2937;
+      background: #020617;
+    }
+
+    .sidebar h3 {
+      margin-bottom: 30px;
+      font-size: 20px;
+    }
+
+    .sidebar a {
+      display: block;
+      padding: 10px 0;
+      color: #94a3b8;
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    .sidebar a:hover {
+      color: white;
+    }
+
+    /* CONTENT */
+    .content {
+      margin-left: 320px; /* 🔥 proper gap */
+      padding: 50px 40px;
+      width: calc(100% - 320px);
+    }
+
+    h1 {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      margin-top: 60px;
+      font-size: 28px;
+      border-bottom: 1px solid #1f2937;
+      padding-bottom: 10px;
+    }
+
+    p {
+      color: #94a3b8;
+      line-height: 1.7;
+      max-width: 800px;
+    }
+
+    /* CODE BLOCK */
+    .code {
+      background: #020617;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 15px;
+      font-family: monospace;
+      font-size: 14px;
+      max-width: 700px;
+    }
+
+    .code ol {
+      padding-left: 20px;
+    }
+
+    .code li {
+      margin-bottom: 12px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+  <h3>Docs</h3>
+
+  <a href="#installation">Installation</a>
+  <a href="#usage">Usage</a>
+  <a href="#colors">Colors</a>
+  <a href="#spacing">Spacing</a>
+  <a href="#typography">Typography</a>
+  <a href="#layout">Layout</a>
+  <a href="#border">Borders</a>
+  <a href="#transform">Transforms</a>
+  <a href="#hover">Hover</a>
+</div>
+
+<!-- CONTENT -->
+<div class="content">
+
+<h1>Sushruto Tailwind</h1>
+<p>
+A lightweight utility-first CSS engine. Build UI using chai-* classes without writing CSS.
+</p>
+
+<!-- INSTALL -->
+<h2 id="installation">📦 Installation</h2>
+
+<div class="code">
+npm install sushruto-tailwind-css
+</div>
+
+<p>Or via CDN:</p>
+
+<div class="code">
+https://cdn.jsdelivr.net/npm/sushruto-tailwind-css/src/index.js
+</div>
+
+<!-- USAGE -->
+<h2 id="usage">⚡ Usage</h2>
+
+<div class="code">
+&lt;script type="module"&gt;
+import { sushrutoTailwind } from "sushruto-tailwind-css";
+sushrutoTailwind();
+&lt;/script&gt;
+</div>
+
+<!-- COLORS -->
+<h2 id="colors">🎨 Colors</h2>
+
+<div class="code">
+  <ol type="i">
+    <li>chai-bg-red → background: red</li>
+    <li>chai-bg-blue → background: blue</li>
+    <li>chai-bg-green → background: green</li>
+    <li>chai-text-white → text: white</li>
+    <li>chai-text-black → text: black</li>
+  </ol>
+</div>
+
+<!-- SPACING -->
+<h2 id="spacing">📏 Spacing</h2>
+
+<div class="code">
+  <ol type="i">
+    <li>chai-p-10 → padding: 10px</li>
+    <li>chai-p-20 → padding: 20px</li>
+    <li>chai-p-50 → padding: 50px</li>
+    <li>chai-m-10 → margin: 10px</li>
+    <li>chai-m-20 → margin: 20px</li>
+  </ol>
+</div>
+
+<!-- TYPOGRAPHY -->
+<h2 id="typography">🔤 Typography</h2>
+
+<div class="code">
+  <ol type="i">
+    <li>chai-text-16 → font-size: 16px</li>
+    <li>chai-text-24 → font-size: 24px</li>
+    <li>chai-font-bold → bold text</li>
+    <li>chai-text-center → center align</li>
+    <li>chai-text-left → left align</li>
+  </ol>
+</div>
+
+<!-- LAYOUT -->
+<h2 id="layout">📦 Layout</h2>
+
+<div class="code">
+  <ol type="i">
+    <li>chai-flex → display: flex</li>
+    <li>chai-flex-center → center alignment</li>
+    <li>chai-flex-col → column layout</li>
+    <li>chai-gap-10 → spacing</li>
+    <li>chai-justify-between → space between</li>
+  </ol>
+</div>
+
+<!-- BORDER -->
+<h2 id="border">📐 Borders</h2>
+
+<div class="code">
+  <ol type="i">
+    <li>chai-border-2 → border width</li>
+    <li>chai-border-4 → thicker border</li>
+    <li>chai-rounded-10 → border radius</li>
+    <li>chai-rounded-20 → larger radius</li>
+    <li>chai-border-red → colored border</li>
+  </ol>
+</div>
+
+<!-- TRANSFORM -->
+<h2 id="transform">🎭 Transforms</h2>
+
+<div class="code">
+  <ol type="i">
+    <li>chai-scale-2 → scale element</li>
+    <li>chai-scale-3 → larger scale</li>
+    <li>chai-rotate-45 → rotate</li>
+    <li>chai-rotate-90 → rotate more</li>
+    <li>chai-scale-1 → default</li>
+  </ol>
+</div>
+
+<!-- HOVER -->
+<h2 id="hover">🖱 Hover</h2>
+
+<div class="code">
+  <ol type="i">
+    <li>chai-hover-scale → zoom effect</li>
+    <li>chai-hover-bg-red → background change</li>
+    <li>chai-hover-text-white → text change</li>
+    <li>chai-hover-shadow → shadow</li>
+    <li>chai-hover-border → border effect</li>
+  </ol>
+</div>
+
+</div>
+
+</body>
+</html>

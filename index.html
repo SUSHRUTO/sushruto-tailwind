@@ -1,24 +1,84 @@
-<body class="chai-flex-center" style="
-  height:100vh;
-  margin:0;
-  background: linear-gradient(135deg, #0f172a, #1e293b);
-">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sushruto Tailwind</title>
+  <script type="module" src="./src/index.js"></script>
+</head>
 
-   <div class="chai-p-20 chai-glass chai-shadow chai-text-center">
+<body style="margin:0; font-family:sans-serif; background:#0f172a; color:white;">
 
-    <h1 class="chai-font-bold chai-text-28">
-    Sushruto Tailwind
-    </h1>
+<!-- NAVBAR -->
+<div style="display:flex; justify-content:space-between; padding:20px 40px; border-bottom:1px solid #222;">
+  
+  <h2>Sushruto Tailwind</h2>
 
-    <p class="chai-text-16">
-    Build UI without writing CSS
-    </p>
+  <div>
+    <a href="./index.html" style="margin-right:20px; color:white;">Home</a>
+    <a href="./docs.html" style="margin-right:20px; color:white;">Docs</a>
+    <a href="./playground.html" style="margin-right:20px; color:white;">Playground</a>
+    <a href="https://github.com/SUSHRUTO/sushruto-tailwind" style="color:white;">GitHub</a>
+  </div>
 
-    <button class="chai-btn chai-hover-scale">
-      Click Me
+</div>
+
+<!-- HERO SECTION -->
+<div style="text-align:center; padding:100px 20px;">
+
+  <h1 style="font-size:50px;">
+    Build UI Faster with  
+    <span style="color:#f97316;">Sushruto Tailwind</span>
+  </h1>
+
+  <p style="color:#9ca3af; margin-top:20px;">
+    A lightweight utility-first CSS engine built from scratch.
+  </p>
+
+  <!-- BUTTONS -->
+  <div style="margin-top:40px;">
+
+    <button 
+      onclick="window.location.href='./playground.html'"
+      style="padding:12px 24px; margin-right:10px; background:#f97316; border:none; border-radius:8px; color:white; cursor:pointer;"
+    >
+      Get Started
+    </button>
+
+    <button 
+      onclick="window.location.href='./docs.html'"
+      style="padding:12px 24px; background:#1f2937; border:none; border-radius:8px; color:white; cursor:pointer;"
+    >
+      View Docs
     </button>
 
   </div>
 
-  <script type="module" src="./src/index.js"></script>
+</div>
+
+<!-- FEATURES SECTION -->
+<div style="display:flex; justify-content:center; gap:20px; padding:40px; flex-wrap:wrap;">
+
+  <div style="background:#1f2937; padding:20px; border-radius:10px; width:250px;">
+    <h3>⚡ Lightweight</h3>
+    <p style="color:#9ca3af;">No dependencies. Super fast.</p>
+  </div>
+
+  <div style="background:#1f2937; padding:20px; border-radius:10px; width:250px;">
+    <h3>🎯 Utility First</h3>
+    <p style="color:#9ca3af;">Write classes, no CSS needed.</p>
+  </div>
+
+  <div style="background:#1f2937; padding:20px; border-radius:10px; width:250px;">
+    <h3>🧠 Smart Engine</h3>
+    <p style="color:#9ca3af;">Auto generates CSS from classes.</p>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<div style="text-align:center; padding:20px; border-top:1px solid #222;">
+  <p style="color:#6b7280;">Built by Sushruto 🚀</p>
+</div>
+
 </body>
+</html>

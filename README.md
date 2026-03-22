@@ -1,108 +1,38 @@
-# 🚀 Sushruto Tailwind
+# Sushruto Tailwind
 
-A lightweight, utility-first CSS engine built from scratch using JavaScript.
+![npm](https://img.shields.io/npm/v/sushruto-tailwind-css)
+![license](https://img.shields.io/npm/l/sushruto-tailwind-css)
 
-Instead of writing traditional CSS, you can directly use utility classes like:
+A lightweight **utility-first CSS engine** built from scratch using JavaScript.
 
-chai-p-20 → padding: 20px  
-chai-bg-red → background-color: red  
+No CSS files. No configuration.  
+Just write classes like `chai-*` and styles are applied automatically.
 
 ---
 
 ## ✨ Features
 
-- ⚡ No CSS required
-- 🎯 Utility-first class system
-- 🧠 Dynamic DOM scanning
+- ⚡ Zero CSS writing
+- 🎯 Utility-first approach
+- 🧠 Dynamic DOM parsing
 - 🔄 Real-time CSS generation
-- 🎨 Modern UI utilities (glass, shadow, buttons)
-- 📦 Available as an npm package
+- 🎨 Built-in UI utilities (shadow, button, hover)
+- 📦 Available as npm package
 
 ---
 
 ## 🛠️ How It Works
 
-This engine follows a simple pipeline:
+Pipeline:
 
-**DOM → Extract Classes → Generate CSS → Apply Styles**
 
-### 1. Class Extraction
-- Scans all DOM elements
-- Collects all class names
-- Filters classes starting with `chai-`
+DOM → Extract Classes → Generate CSS → Apply Styles
 
-### 2. Parsing Logic
-- Splits class names using `-`
-- Example:
-  chai-p-20 → ["chai", "p", "20"]
 
-### 3. CSS Generation
-- Converts parsed classes into CSS rules
-- Example:
-  chai-p-20 → padding: 20px
-
-### 4. Style Injection
-- Creates a `<style>` tag
-- Injects generated CSS into the document
-
----
-
-## ⚙️ Supported Utilities
-
-### 📏 Spacing
-| Class | Output |
-|------|--------|
-| chai-p-20 | padding: 20px |
-| chai-m-10 | margin: 10px |
-
----
-
-### 🎨 Colors
-| Class | Output |
-|------|--------|
-| chai-bg-red | background-color: red |
-| chai-text-white | color: white |
-
----
-
-### 🔤 Typography
-| Class | Output |
-|------|--------|
-| chai-text-20 | font-size: 20px |
-| chai-text-center | text-align: center |
-| chai-font-bold | font-weight: bold |
-
----
-
-### 📦 Layout
-| Class | Output |
-|------|--------|
-| chai-flex | display: flex |
-| chai-flex-center | center alignment |
-
----
-
-### 📐 Size
-| Class | Output |
-|------|--------|
-| chai-w-100 | width: 100px |
-| chai-h-100 | height: 100px |
-
----
-
-### 🎭 Effects
-| Class | Output |
-|------|--------|
-| chai-shadow | box-shadow |
-| chai-hover-scale | hover scale effect |
-
----
-
-### 🧩 Components
-| Class | Output |
-|------|--------|
-| chai-btn | styled button |
-| chai-glass | glassmorphism card |
+1. Scans DOM for `chai-*` classes  
+2. Parses class patterns  
+3. Converts them into CSS  
+4. Injects styles dynamically  
 
 ---
 
@@ -110,7 +40,85 @@ This engine follows a simple pipeline:
 
 ```bash
 npm install sushruto-tailwind-css
+🚀 Usage
+<div class="chai-p-20 chai-bg-red chai-text-center">
+  Hello World
+</div>
+import { sushrutoTailwind } from "sushruto-tailwind-css";
 
-## 🌐 Live Demo
+sushrutoTailwind();
+🎨 Utilities
+🎨 Colors
 
-https://sushruto-tailwind.vercel.app/
+i. chai-bg-red → background: red
+ii. chai-bg-blue → background: blue
+iii. chai-bg-green → background: green
+iv. chai-text-white → color: white
+v. chai-text-black → color: black
+
+Example:
+<div class="chai-bg-red chai-p-20">
+  Red Box
+</div>
+📏 Spacing
+
+i. chai-p-10 → padding: 10px
+ii. chai-p-20 → padding: 20px
+iii. chai-p-50 → padding: 50px
+iv. chai-m-10 → margin: 10px
+v. chai-m-20 → margin: 20px
+
+🔤 Typography
+
+i. chai-text-16 → font-size: 16px
+ii. chai-text-24 → font-size: 24px
+iii. chai-font-bold → bold text
+iv. chai-text-center → center align
+v. chai-text-left → left align
+
+📦 Layout
+
+i. chai-flex → display: flex
+ii. chai-flex-center → center alignment
+iii. chai-flex-col → column layout
+iv. chai-gap-10 → spacing between elements
+v. chai-justify-between → space between
+
+📐 Borders
+
+i. chai-border-2 → border width
+ii. chai-border-4 → thicker border
+iii. chai-rounded-10 → border radius
+iv. chai-rounded-20 → larger radius
+v. chai-border-red → colored border
+
+🎭 Transforms
+
+i. chai-scale-2 → scale element
+ii. chai-scale-3 → larger scale
+iii. chai-rotate-45 → rotate 45deg
+iv. chai-rotate-90 → rotate 90deg
+v. chai-scale-1 → normal size
+
+🖱 Hover Effects
+
+i. chai-hover-scale → zoom effect
+ii. chai-hover-bg-red → change background
+iii. chai-hover-text-white → change text color
+iv. chai-hover-shadow → add shadow
+v. chai-hover-border → border effect
+
+💻 GitHub Repository
+
+👉 https://github.com/SUSHRUTO/sushruto-tailwind
+
+
+👨‍💻 Author
+
+Sushruto Majumdar
+
+⭐ Future Improvements
+Responsive utilities
+Grid system
+Theme support
+Advanced animations

@@ -1,6 +1,6 @@
 {
   "name": "sushruto-tailwind-css",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A lightweight Tailwind-like CSS engine",
   "main": "src/index.js",
   "type": "module",

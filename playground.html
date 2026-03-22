@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Playground - Sushruto Tailwind</title>
+
+  <!-- MONACO -->
+  <script src="https://cdn.jsdelivr.net/npm/monaco-editor@0.45.0/min/vs/loader.js"></script>
+</head>
+<body>
+
+
+<body style="margin:0; background:#0f172a; color:white; font-family:sans-serif;">
+
+<!-- TOP BAR -->
+<div style="display:flex; justify-content:space-between; padding:12px 20px; background:#020617; border-bottom:1px solid #1f2937;">
+  <h3 style="margin:0;">Playground</h3>
+  <span style="color:#94a3b8;">Live Mode</span>
+</div>
+
+<!-- MAIN -->
+<div style="display:flex; height:calc(100vh - 50px);">
+
+  <!-- LEFT: EDITOR -->
+  <div style="width:50%; display:flex; flex-direction:column; border-right:1px solid #1f2937;">
+
+    <div style="padding:10px; font-weight:bold; text-align:center; background:#020617;">
+       EDITOR
+    </div>
+
+    <div id="editor" style="flex:1;"></div>
+
+  </div>
+
+  <!-- RIGHT: PREVIEW -->
+  <div style="width:50%; display:flex; flex-direction:column;">
+
+    <div style="padding:10px; font-weight:bold; text-align:center; background:#020617;">
+      PREVIEW
+    </div>
+
+    <div id="preview" style="flex:1; background:white; padding:20px; overflow:auto;"></div>
+
+  </div>
+
+</div>
+
+<!-- SCRIPT -->
+<script type="module">
+  import { sushrutoTailwind } from "https://cdn.skypack.dev/sushruto-tailwind-css";
+
+  let editor;
+
+  require.config({ paths: { vs: "https://cdn.jsdelivr.net/npm/monaco-editor@0.45.0/min/vs" } });
+
+  require(["vs/editor/editor.main"], function () {
+
+    editor = monaco.editor.create(document.getElementById("editor"), {
+      value: `<div class="chai-p-20 chai-bg-red chai-text-center">
+  Hello All
+</div>`,
+      language: "html",
+      theme: "vs-dark",
+      fontSize: 14,
+      minimap: { enabled: false },
+      automaticLayout: true
+    });
+
+    updatePreview();
+
+    // 🔥 AUTO RUN ON CHANGE
+    editor.onDidChangeModelContent(() => {
+      updatePreview();
+    });
+
+  });
+
+  function updatePreview() {
+    const code = editor.getValue();
+    document.getElementById("preview").innerHTML = code;
+    sushrutoTailwind();
+  }
+</script>
+
+</body>
+</html>
