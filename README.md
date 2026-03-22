@@ -112,10 +112,9 @@ v. chai-hover-border → border effect
 
 👉 https://github.com/SUSHRUTO/sushruto-tailwind
 
-Live Demo: 
-  <a href="https://sushruto-tailwind-z7er.vercel.app/" target="_blank" style="color:#22c55e; text-decoration:none;">
-    Open Website →
-  </a>
+🌐 Live Demo: 
+    Open Website → https://sushruto-tailwind-z7er.vercel.app/
+
 
 👨‍💻 Author
 
