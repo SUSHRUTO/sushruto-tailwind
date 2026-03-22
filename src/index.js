@@ -9,7 +9,7 @@ export function sushrutoTailwind() {
   applyStyles(css);
 }
 
-// auto run
+// auto run when page loads
 if (typeof window !== "undefined") {
   window.addEventListener("DOMContentLoaded", sushrutoTailwind);
 }
