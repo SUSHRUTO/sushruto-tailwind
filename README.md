@@ -35,6 +35,13 @@ DOM → Extract Classes → Generate CSS → Apply Styles
 4. Injects styles dynamically  
 
 ---
+## 💻 GitHub Repository
+
+👉 https://github.com/SUSHRUTO/sushruto-tailwind
+
+
+## 🌐 Live Demo: 
+    Open Website → https://sushruto-tailwind-z7er.vercel.app/
 
 ## 📦 Installation
 
@@ -108,14 +115,6 @@ iii. chai-hover-text-white → change text color
 iv. chai-hover-shadow → add shadow
 v. chai-hover-border → border effect
 
-## 💻 GitHub Repository
-
-👉 https://github.com/SUSHRUTO/sushruto-tailwind
-
-
-## 🌐 Live Demo: 
-    Open Website → https://sushruto-tailwind-z7er.vercel.app/
-
 
 ## 👨‍💻 Author
 
@@ -126,3 +125,4 @@ Responsive utilities
 Grid system
 Theme support
 Advanced animations
+
