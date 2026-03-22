@@ -41,7 +41,7 @@ DOM → Extract Classes → Generate CSS → Apply Styles
 
 
 ## 🌐 Live Demo: 
-    Open Website → https://sushruto-tailwind-z7er.vercel.app/
+ 👉 https://sushruto-tailwind-z7er.vercel.app/
 
 ## 📦 Installation
 
