@@ -1,0 +1,14 @@
+{
+  "name": "sushruto-tailwind",
+  "version": "1.0.0",
+  "description": "A lightweight Tailwind-like CSS engine",
+  "main": "src/index.js",
+  "type": "module",
+  "keywords": ["css", "tailwind", "utility"],
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "files": ["src"],
+  "author": "Sushruto Majumdar",
+  "license": "MIT"
+}
