@@ -29,7 +29,7 @@ Pipeline:
 DOM → Extract Classes → Generate CSS → Apply Styles
 
 
-1. Scans DOM for `chai-*` classes  
+1. Scans DOM for `chai` classes  
 2. Parses class patterns  
 3. Converts them into CSS  
 4. Injects styles dynamically  
@@ -108,19 +108,20 @@ iii. chai-hover-text-white → change text color
 iv. chai-hover-shadow → add shadow
 v. chai-hover-border → border effect
 
-💻 GitHub Repository
+## 💻 GitHub Repository
 
 👉 https://github.com/SUSHRUTO/sushruto-tailwind
 
-🌐 Live Demo: 
+
+## 🌐 Live Demo: 
     Open Website → https://sushruto-tailwind-z7er.vercel.app/
 
 
-👨‍💻 Author
+## 👨‍💻 Author
 
 Sushruto Majumdar
 
-⭐ Future Improvements
+## ⭐ Future Improvements
 Responsive utilities
 Grid system
 Theme support
